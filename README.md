@@ -116,7 +116,7 @@ To execute the code above, make sure that you set in Terminal (or Command Prompt
 node main.js
 ```
 
-If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in mlab - inside the Collection that you used. Also note that the timestamps are
+If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in mlab - inside the Collection that you used.
 
 ```Terminal
 2020-01-02_13:33:58, X: 43
