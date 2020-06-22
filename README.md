@@ -116,23 +116,23 @@ To execute the code above, make sure that you set in Terminal (or Command Prompt
 node main.js
 ```
 
-If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in mlab - inside the Collection that you used.
+If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in mlab - inside the Collection that you used. Also note that the timestamps are
 
 ```Terminal
-2019-01-02_13:33:58, X: 43
-2019-01-02_13:33:58, Y: 261
-2019-01-02_13:33:58, Radius: 77
-2019-01-02_13:33:59, X: 280
-2019-01-02_13:33:59, Y: 145
-2019-01-02_13:33:59, Radius: 102
-2019-01-02_13:34:00, X: 667
-2019-01-02_13:34:00, Y: 501
-2019-01-02_13:34:00, Radius: 57
+2020-01-02_13:33:58, X: 43
+2020-01-02_13:33:58, Y: 261
+2020-01-02_13:33:58, Radius: 77
+2020-01-02_13:33:59, X: 280
+2020-01-02_13:33:59, Y: 145
+2020-01-02_13:33:59, Radius: 102
+2020-01-02_13:34:00, X: 667
+2020-01-02_13:34:00, Y: 501
+2020-01-02_13:34:00, Radius: 57
 Writing to database...
 Data added
-2019-01-02_13:34:01, X: 577
-2019-01-02_13:34:01, Y: 523
-2019-01-02_13:34:01, Radius: 84
+2020-01-02_13:34:01, X: 577
+2020-01-02_13:34:01, Y: 523
+2020-01-02_13:34:01, Radius: 84
 ```
 
 <p align="center">
