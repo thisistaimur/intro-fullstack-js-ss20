@@ -9,7 +9,7 @@ This project demonstrates how to develop a distributed communication and visuali
 
 For this work, [mongoDB](https://www.mongodb.com/what-is-mongodb) and [mlab](https://mlab.com/home) are used. MongoDB is a JSON-like database system, which makes it easy to work with many applications and frameworks (especially those developed with JavaScript). mlab is a database-as-a-service with a range of features for quicker and efficient development. Here is a [tutorial](https://docs.mlab.com) to get started with mongoDB and mlab.
 
-After setting up your free account with mlab, create a new database, a new collection, and a new user. For the database, select the Sandbox mode, AWS, and a region closer to you. After the deployment process finishes, create a new collection (under the **Collections** tab), and a new database user (under **Users**, as image below). Finally, you need to get an API Key and activate the Data API. To access this, click your **user** name on the top right corner of the window.
+After setting up your free account with mlab, create a new database, a new collection, and a new user. For the database, select the Sandbox mode, AWS, and Germany as a region, if available (lets keep our data as close to us as possible). After the deployment process finishes, create a new collection (under the **Collections** tab), and a new database user (under **Users**, as image below). Finally, you need to get an API Key and activate the Data API. To access this, click your **user** name on the top right corner of the window.
 
 <p align="center">
 <img alt="mLabCreateNewDeployment" src="assets/mLabCreateNewDeployment.png" width="480" />
