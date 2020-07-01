@@ -35,6 +35,7 @@ Add the following code to the code editor, and make sure to add to replace the Y
 ```javascript
 exports = function(payload) {
   const mongodb = context.services.get("mongodb-atlas");
+  //replace YOURDBNAME and YOURCOLLECTIONNAME with your database and colelction names
   const mycollection = mongodb.db("YOURDBNAME").collection("YOURCOLLECTIONNAME");
   return mycollection.find({}).toArray();
 };
