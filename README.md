@@ -44,7 +44,7 @@ exports = function(payload) {
 <img alt="deployApp" src="assets/deployApp.png" width="480" />
 </p>
 
-That's it, your database and API are ready to go!
+**That's it, your database and API are ready to go!**
 ---
 
 ## Node.js Client
