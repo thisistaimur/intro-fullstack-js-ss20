@@ -143,7 +143,7 @@ node main.js
 If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in mlab - inside the Collection that you used.
 
 ```Terminal
-020-07-01_20:52:14, X: 651
+2020-07-01_20:52:14, X: 651
 2020-07-01_20:52:14, Y: 158
 2020-07-01_20:52:14, Radius: 31
 2020-07-01_20:52:15, X: 693
