@@ -5,7 +5,7 @@ This project demonstrates how to develop a distributed communication and visuali
 
 ---
 
-## Database with MongoDb Atlas
+## Database with MongoDB Atlas
 
 For this work, [mongoDB](https://www.mongodb.com/what-is-mongodb) and [Mongo Atlas](https://mlab.com/home) are used. MongoDB is a JSON-like database system, which makes it easy to work with many applications and frameworks (especially those developed with JavaScript). Atlas is a database-as-a-service with a range of features for quicker and efficient development. Here is a [tutorial](https://docs.atlas.mongodb.com/getting-started/) to get started with mongoDB and Atlas.
 
