@@ -198,8 +198,8 @@ function setup() {
 
   //The URL of the webhook you copied earlier from Atlas-Realm needs to go here.
   //This URL is from my personal databse and it will work for you incase you didn't.. 
-  //..make it this far with your own URL
-  //Try oo open the URL in your browser and you will see the JSON data
+  //..make it this far with your own API
+  //Try to open the URL in your browser and you will see the JSON data
   url = 'https://webhooks.mongodb-stitch.com/api/client/v2.0/app/test-qmkdw/service/test/incoming_webhook/webhook0'
   loadDatabase(); //call the loadDatabase function
 }
