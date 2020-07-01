@@ -45,6 +45,7 @@ exports = function(payload) {
 </p>
 
 **That's it, your database and API are ready to go!**
+
 ---
 
 ## Node.js Client
