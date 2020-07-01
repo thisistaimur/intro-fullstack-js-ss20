@@ -11,7 +11,7 @@ function setup() {
   // - The name of the database (i.e. file-test)
   // - the name of the collection (i.e. Collection1)
   // - The API key
-  url = 'https://api.mlab.com/api/1/databases/file-test/collections/Collection1?apiKey=XXXXXXXXXXXXXXXXX'
+  url = 'https://webhooks.mongodb-stitch.com/api/client/v2.0/app/test-qmkdw/service/test/incoming_webhook/webhook0'
   loadDatabase(); //call the loadDatabase function
 }
 
@@ -30,19 +30,19 @@ function drawData(data) {
   //Use the x and y values for the shape's position, and the radius for the size. Color for each shape is assigned by the col array
   for (var i = 0; i < data.length; i++) {
     //For every item, generate a new random color, and push it in the array
-    col[i].push(color(random(255), random(255), random(255), random(255)));
+    col.push(color(random(255), random(255), random(255), random(255)));
 
     noStroke();
     //Access the color array element, and use its value for the color of the shape
     fill(col[i]);
     //Access the JSON values using the dot notation and the name of entry (i.e. x, y or radius)
-    ellipse(data[i].x, data[i].y, data[i].radius, data[i].radius);
+    ellipse(data[i].x.$numberInt, data[i].y.$numberInt, data[i].radius.$numberInt, data[i].radius.$numberInt);
 
     //Create also a line that connects one shape with the next, using the same col array values
     strokeWeight(1);
     stroke(col[i]);
     if (i>0){
-      line(data[i].x, data[i].y, data[i-1].x, data[i-1].y);
+      line(data[i].x.$numberInt, data[i].y.$numberInt, data[i-1].x.$numberInt, data[i-1].y.$numberInt);
     }
   }
 }
