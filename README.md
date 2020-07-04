@@ -7,7 +7,7 @@ This project demonstrates how to develop a distributed communication and visuali
 
 ## Database with MongoDB Atlas
 
-For this work, [mongoDB](https://www.mongodb.com/what-is-mongodb) and [Mongo Atlas](https://mlab.com/home) are used. MongoDB is a JSON-like database system, which makes it easy to work with many applications and frameworks (especially those developed with JavaScript). Atlas is a database-as-a-service with a range of features for quicker and efficient development. Here is a [tutorial](https://docs.atlas.mongodb.com/getting-started/) to get started with mongoDB and Atlas.
+For this work, [mongoDB](https://www.mongodb.com/what-is-mongodb) and [Mongo Atlas](https://cloud.mongodb.com) are used. MongoDB is a JSON-like database system, which makes it easy to work with many applications and frameworks (especially those developed with JavaScript). Atlas is a database-as-a-service with a range of features for quicker and efficient development. Here is a [tutorial](https://docs.atlas.mongodb.com/getting-started/) to get started with mongoDB and Atlas.
 
 After setting up your free account with Atlas, the first thing you will do is to create a free cluster, a new database, a new collection, and a new user for the database. For the cluster, click the create Cluster button, then select AWS and Frankfurt,DE as a region (lets keep our data as close to us as possible). Also give your cluster a name. After the deployment process finishes, click on the "connect" tab and add the IP ***0.0.0.0/0*** to the whitelist IP field and enter a username and password for your connection (keep these somewhere safe, don't lose this info!). Click on "Choose a connection method" and then select the middle option "Connect Your Application" on the next step. Once done you will get a Connection String, as shown in the screenshot below. Copy and paste this string in a notepad somewhere. The next step is to create a new collection (under the **Collections** tab), and a new database  (if still confused, see [MongoDB Docs for stepwise instructions](https://docs.atlas.mongodb.com/getting-started/)) (Note: Add 0.0.0.0/0 as your whitelisted IP to allow access from all IPs). Finally, you need to to create an API end point to be able to access your data from your frontend/clientside. To do this, click on **Realm** button in the menu Above your cluster (see pic below).
 
@@ -140,7 +140,7 @@ To execute the code above, make sure that you set in Terminal (or Command Prompt
 node main.js
 ```
 
-If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in mlab - inside the Collection that you used.
+If everything is properly set in your code, you will see on your Terminal the data values as below. The data entries will also appear in MongoDB Atlas - inside the Collection that you used.
 
 ```Terminal
 2020-07-01_20:52:14, X: 651
