@@ -1,10 +1,11 @@
 //Import MongoDB
 var MongoClient = require('mongodb').MongoClient;
 //URL of the Mongo database
-//dbuser1 - username of the database
-//dbuser1pass - password for the user
-//file-test - name of the database
-var url = 'mongodb://dbuser1:dbuser1pass@dsXXXXXX.mlab.com:61022/file-test';
+//username - username of the database
+//password - password for the database user (not you mongodb account)
+//dbname - name of the database
+//make sure you don't use the < > symbols
+var url = 'mongodb+srv://<username>:<password>@test-eeir0.mongodb.net/<dbname>?retryWrites=true&w=majority';
 
 //Function to get a random number, from a minimum to a maximum value
 function getRandomInt(min, max) {
@@ -33,21 +34,23 @@ setInterval(function(){
   var seconds = new Date();
 
   //If the seconds equal to 0, then store the values to the db
-  if(seconds.getSeconds() == 0){
+  if(seconds.getSeconds() == 20){
     console.log("Writing to database...");
 
     //Format the data for mongoDB
-    var mongoLog = [{
+    var mongoLog = {
       time: date,
       x: randomX,
       y: randomY,
       radius: randomRadius
-    }];
+    };
 
     //Connect to the client
     MongoClient.connect(url, function (err, db) {
+      //test is the name of the db
       //Collection1 is the name of the db's collection
-      var col = db.collection('Collection1');
+      const database= db.db('test')
+      var col = database.collection('dataschemas');
       //Insert the results, and close the connection
       col.insert(mongoLog, function(err, result){
         db.close();
