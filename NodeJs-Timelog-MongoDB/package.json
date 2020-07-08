@@ -9,6 +9,6 @@
   "author": "Taimur Khan",
   "license": "MIT",
   "devDependencies": {
-    "mongodb": "^2.2.31"
+    "mongodb": "^3.5.9"
   }
 }
